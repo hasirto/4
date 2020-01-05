@@ -1,0 +1,17 @@
+islem=input("dikdörtgen alan ve çevre hesaplamak için(1)")
+
+if islem == "1":
+    for i in reversed(range(4)):
+        print("kalan hakkınız:{}".format(i))
+        uzun_kenar=int(input("uzun kenarı gir: "))
+        kısa_kenar=int(input("kısa kenarı gir: "))
+        if uzun_kenar<=kısa_kenar:
+            print("uzun kenar kısa kenardan az olamaz!")
+        elif uzun_kenar<=kısa_kenar:
+            print("kısa kenar uzun kenara eşit olamaz")
+        else:
+            alan=(uzun_kenar*kısa_kenar)
+            cevre=(uzun_kenar+kısa_kenar)*2
+            print("{} alanı".format(alan))
+            print("{} çevresi".format(cevre))
+
